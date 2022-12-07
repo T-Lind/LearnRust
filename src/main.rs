@@ -5,6 +5,7 @@ mod string;
 mod structures;
 mod matches;
 mod generics;
+mod vectors;
 
 fn dice_roll() -> i8 {
     return 3;
@@ -34,4 +35,6 @@ fn main() {
     matches::learn_match(2);
 
     generics::learn_generics();
+
+    vectors::learn_vectors()
 }
