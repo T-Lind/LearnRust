@@ -6,6 +6,7 @@ mod structures;
 mod matches;
 mod generics;
 mod vectors;
+mod enumerations;
 
 fn dice_roll() -> i8 {
     return 3;
@@ -36,5 +37,7 @@ fn main() {
 
     generics::learn_generics();
 
-    vectors::learn_vectors()
+    vectors::learn_vectors();
+
+    enumerations::learn_enumerations();
 }
