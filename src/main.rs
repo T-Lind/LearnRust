@@ -4,6 +4,7 @@ mod tuple;
 mod string;
 mod structures;
 mod matches;
+mod generics;
 
 fn dice_roll() -> i8 {
     return 3;
@@ -31,4 +32,6 @@ fn main() {
     structures::learn_structures();
 
     matches::learn_match(2);
+
+    generics::learn_generics();
 }
