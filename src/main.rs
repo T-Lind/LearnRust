@@ -1,3 +1,10 @@
+extern crate core;
+
+mod tuple;
+mod string;
+mod structures;
+mod matches;
+
 fn dice_roll() -> i8 {
     return 3;
 }
@@ -17,13 +24,11 @@ fn main() {
     println!("Numbers: {x0} {x1}");
     println!("let evaluation: {evaluate}");
 
-    // Different data types for a and b here
-    let tuple0 = (2, 3.4);
-    let n0 = tuple0.0; // Cannot use brackets
-    let n1 = tuple0.1;
-    println!("Tuple: ({n0}, {n1})");
+    tuple::learn_tuple();
 
-    use std::cmp::min;
-    let least = min(tuple0.0 as f64, tuple0.1);
-    println!("Least in tuple: {least}")
+    string::learn_string();
+
+    structures::learn_structures();
+
+    matches::learn_match(2);
 }
